@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/katesavras.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/katesavras.github.io/static/js/main.bf994a1e.js",
+    "static/js/787.a5fa54f9.chunk.js": "/katesavras.github.io/static/js/787.a5fa54f9.chunk.js",
+    "static/media/logo.svg": "/katesavras.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/katesavras.github.io/index.html",
+    "main.073c9b0a.css.map": "/katesavras.github.io/static/css/main.073c9b0a.css.map",
+    "main.bf994a1e.js.map": "/katesavras.github.io/static/js/main.bf994a1e.js.map",
+    "787.a5fa54f9.chunk.js.map": "/katesavras.github.io/static/js/787.a5fa54f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.bf994a1e.js"
+  ]
+}
