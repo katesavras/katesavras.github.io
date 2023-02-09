@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd7a1fd7.css",
-    "main.js": "/static/js/main.97359a63.js",
-    "static/js/787.a5fa54f9.chunk.js": "/static/js/787.a5fa54f9.chunk.js",
-    "static/media/smoke.png": "/static/media/smoke.1b55fa461d7d51c1378b.png",
-    "index.html": "/index.html",
-    "main.bd7a1fd7.css.map": "/static/css/main.bd7a1fd7.css.map",
-    "main.97359a63.js.map": "/static/js/main.97359a63.js.map",
-    "787.a5fa54f9.chunk.js.map": "/static/js/787.a5fa54f9.chunk.js.map"
+    "main.css": "/katesavras.github.io/static/css/main.bd7a1fd7.css",
+    "main.js": "/katesavras.github.io/static/js/main.ed424134.js",
+    "static/js/787.a5fa54f9.chunk.js": "/katesavras.github.io/static/js/787.a5fa54f9.chunk.js",
+    "static/media/smoke.png": "/katesavras.github.io/static/media/smoke.1b55fa461d7d51c1378b.png",
+    "index.html": "/katesavras.github.io/index.html",
+    "main.bd7a1fd7.css.map": "/katesavras.github.io/static/css/main.bd7a1fd7.css.map",
+    "main.ed424134.js.map": "/katesavras.github.io/static/js/main.ed424134.js.map",
+    "787.a5fa54f9.chunk.js.map": "/katesavras.github.io/static/js/787.a5fa54f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd7a1fd7.css",
-    "static/js/main.97359a63.js"
+    "static/js/main.ed424134.js"
   ]
 }
