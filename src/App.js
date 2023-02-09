@@ -1,5 +1,5 @@
-import smoke from './smoke.png';
 import './App.scss';
+import smoke from './smoke.png';
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub} from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
