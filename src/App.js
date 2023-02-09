@@ -24,7 +24,6 @@ function App() {
                    <div className='banner__img-wrap'>
                        <img src={smoke} alt=""/>
                    </div>
-
                </div>
                 <div className='container'>
                     <div className='row'>
@@ -70,7 +69,6 @@ function App() {
             {/*        </div>*/}
             {/*    </div>*/}
             {/*</section>*/}
-
         </div>
     );
 }
