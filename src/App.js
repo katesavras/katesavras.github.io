@@ -4,6 +4,20 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub} from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 function App() {
+
+    const onButtonClick = () => {
+        fetch('resume.pdf').then(response => {
+            response.blob().then(blob => {
+                const fileURL = window.URL.createObjectURL(blob);
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'CVKateSavras.pdf';
+                alink.click();
+            })
+        })
+    }
+
+
     return (
         <div className="app">
             <header className="header">
@@ -34,7 +48,7 @@ function App() {
                                 approach, experience with CSS preprocessors, Java Script, React, ability to use Flexible
                                 Box Layout, Grid, Bootstrap. I have a creative mind and I`m ready for new challenges.
                             </p>
-                            <button className='banner__download'>Download Resume</button>
+                            <button className='banner__download' onClick={onButtonClick}>Download Resume</button>
                         </div>
                     </div>
                 </div>
