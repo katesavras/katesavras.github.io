@@ -30,12 +30,9 @@ function App() {
                         <div className='col-lg-8 col-xl-6'>
                             <h1 className='banner__title'>Hi, I am Kate Savras. <br/> A front-end developer.</h1>
                             <p className='banner__about'>
-                                I’m a Frontend Developer with more than one year of professional experience. I have
-                                experience in adaptive layout web-sites ​​adhering to the concept of a component
+                               I have experience in adaptive layout web-sites ​​adhering to the concept of a component
                                 approach, experience with CSS preprocessors, Java Script, React, ability to use Flexible
-                                Box Layout, Grid, Bootstrap. I have developed an app using React, Redux, and Hooks. I
-                                have a creative mind and I`m ready for new challenges. I always try to do my work the
-                                best way.
+                                Box Layout, Grid, Bootstrap. I have a creative mind and I`m ready for new challenges.
                             </p>
                             <button className='banner__download'>Download Resume</button>
                         </div>
