@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Forum&family=Karla:wght@400;700&family=Montserrat:wght@400;700&family=Trocchi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Karla:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Trocchi&display=swap');
 $font-karla: 'Karla', sans-serif;
 $font: 'Montserrat', sans-serif;
 $color-gray: #363535;
@@ -89,10 +89,13 @@ img {
   position: relative;
   min-height: 100vh;
   background-color: white;
-
   display: flex;
   align-items: center;
   padding: 50px;
+
+  @media (max-width: 600px) {
+    padding: 40px 20px;
+  }
 
   &__bg{
     position: absolute;
@@ -187,15 +190,28 @@ img {
 }
 
 .work{
-  background-color: white;
+  background-color: #e0d6d133;
   position: relative;
-  padding: 50px;
+  padding: 50px 50px 60px 50px;
+
+  @media (max-width: 600px) {
+    padding: 40px 20px 50px 20px;
+  }
 
   &__title{
+    font-weight: bold;
     position: relative;
     z-index: 10;
     max-width: fit-content;
     margin-bottom: 30px;
+    font-size: 48px;
+
+    @media (max-width: 900px) {
+      font-size: 38px;
+    }
+    @media (max-width: 600px) {
+      font-size: 28px;
+    }
 
     &:after{
       content: "";
@@ -212,12 +228,67 @@ img {
   &:after{
     content: '';
     width: 45%;
-    height: 5px;
+    height: 10px;
     position: absolute;
     bottom: 0;
     right: 0;
     background-color: #61dafb;
   }
+
+  &__item{
+     margin-bottom: 30px;
+
+    h4{
+      font-weight: 600;
+      color: black;
+    }
+
+    p{
+      color: $color-gray;
+    }
+
+    ul{
+      margin-bottom: 0;
+      padding: 0;
+      list-style-type: none;
+
+      li{
+        margin-bottom: 10px;
+        //
+        //&:last-child{
+        //  margin-bottom: 0;
+        //}
+      }
+
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li{
+          font-weight: 500;
+          margin-right: 10px;
+          padding: 8px 16px;
+          border-radius: 25px;
+          background-color: rgba(215, 215, 215, 0.87);
+
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
 }
 
 @media (max-width: 600px) {
