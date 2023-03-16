@@ -1,115 +1,15 @@
 import './App.scss';
-import smoke from './smoke.png';
-import {BsLinkedin} from "react-icons/bs";
-import {BsGithub} from "react-icons/bs";
-import {BsFacebook} from "react-icons/bs";
+
+import Header from "./components/Header";
+import Banner from "./components/Banner";
+import Work from "./components/Work";
 
 function App() {
-
-    const onButtonClick = () => {
-        fetch('resume.pdf').then(response => {
-            response.blob().then(blob => {
-                const fileURL = window.URL.createObjectURL(blob);
-                let alink = document.createElement('a');
-                alink.href = fileURL;
-                alink.download = 'CVKateSavras.pdf';
-                alink.click();
-            })
-        })
-    }
-
-
     return (
         <div className="app">
-            <header className="header">
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col-12'>
-                            <ul className='header__media'>
-                                <li><a href="https://github.com/katesavras?tab=repositories"><BsGithub color='white'
-                                                                                                       size='30'/></a>
-                                </li>
-                                <li><a href="https://www.linkedin.com/in/ekaterina-savras/"><BsLinkedin color='white'
-                                                                                                        size='30'/></a>
-                                </li>
-                                <li><a href="https://www.facebook.com/profile.php?id=100009667419669"><BsFacebook
-                                    color='white' size='30'/></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <section className='banner'>
-                <div className='banner__bg'>
-                    <div className='banner__img-wrap'>
-                        <img src={smoke} alt=""/>
-                    </div>
-                </div>
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col-lg-8 col-xl-6'>
-                            <h1 className='banner__title'>Hi, I am Kate Savras. <br/> A front-end developer.</h1>
-                            <p className='banner__about'>
-                                I have experience in adaptive layout web-sites ​​adhering to the concept of a component
-                                approach, experience with CSS preprocessors, Java Script, React, ability to use Flexible
-                                Box Layout, Grid, Bootstrap. I have a creative mind and I`m ready for new challenges.
-                            </p>
-                            <button className='banner__download' onClick={onButtonClick}>Download Resume</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className='work'>
-                <div className='container'>
-                    <div className='row'>
-                        <div className='col-12'>
-                            <h1 className='work__title'>Work</h1>
-                        </div>
-                    </div>
-                    <div className='work__item row'>
-                    <div className='col-lg-4'>
-                        <h4>Ester Dijital</h4>
-                        <p>Mar 2022 - Dec 2022</p>
-                    </div>
-                    <div className='col-lg-8'>
-                        <ul>
-                            <li>Creating adaptive, cross-browser web-pages for layout using Figma, HTML5, SCSS,
-                                Bootstrap, Pixel Perfect, BEM methodology, Java Script.
-                            </li>
-                            <li>Writing and implementing, clean code for components using Java Script, React.</li>
-                            <li>Experience with Vue.js.</li>
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS/SCSS</li>
-                                <li>Java Script</li>
-                                <li>React</li>
-                                <li>WordRress</li>
-                            </ul>
-                        </ul>
-                    </div>
-                </div>
-                    <div className='work__item row'>
-                        <div className='col-lg-4'>
-                            <h4>Senticode</h4>
-                            <p>Aug 2021 - Feb 2022</p>
-                        </div>
-                        <div className='col-lg-8'>
-                            <ul>
-                                <li>Creating adaptive web-pages for bootstrap layout using Figma, HTML5, SCSS,
-                                    Bootstrap
-                                </li>
-                                <li>Learned ASP.NET Razor and migrated layout to its components</li>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS/SCSS</li>
-                                    <li>Bootstrap</li>
-                                    <li>Java Script</li>
-                                </ul>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Header/>
+            <Banner/>
+            <Work/>
         </div>
     );
 }

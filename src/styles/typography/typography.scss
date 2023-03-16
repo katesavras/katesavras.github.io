@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Karla:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Trocchi&display=swap');
+
+$font-karla: 'Karla', sans-serif;
+$font: 'Montserrat', sans-serif;
+
+
+@mixin header-bold {
+  font-family: $font;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 130%;
+
+  @media (max-width: 900px) {
+    font-size: 38px;
+  }
+  @media (max-width: 600px) {
+    font-size: 28px;
+  }
+}
+
+@mixin header-bolder {
+  @include header-bold;
+  font-weight: bolder;
+}
+
+@mixin text-bold {
+  font-family: $font;
+  font-weight: 600;
+}
